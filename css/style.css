@@ -1,6 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 :root{
     --brand-cream:#F7F4ED;
     --brand-beige:#E6DCCB;
-    --brand-coffee:#76543C;
+    --brand-coffee: #91674a;
+    --brand-coffee-bg:#76543C;
     --brand-dark:#29251F;
 }
+
+body{
+    background: var(--brand-cream);
+    font-family: "Nunito", sans-serif;
+}
+
+/* Start Header */
+
+/* Start Navbar */
+.navbar{
+    
+}
+
+.brandheaders{
+    color: var(--brand-coffee);
+    font-size: 30px;
+}
+
+.brandimgs{
+    max-width: 40px;
+    transform: translateY(-10px);
+}
+
+.nav-link{
+    color: var(--brand-coffee);
+    position: relative;
+}
+
+.nav-link:hover{
+    color: var(--brand-coffee-bg);
+}
+
+.nav-link::after{
+    content: "";
+    background-color: brown;
+    width: 0;
+    height: 2px;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    transition: all .5s;
+}
+
+.nav-link:hover::after{
+    width: 100%;
+}
+
+.order-btns{
+    color: #ffff;
+    border: none;
+    background: var(--brand-coffee-bg);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+/* End Navbar */
+
+/* End Header */
