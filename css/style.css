@@ -3,6 +3,7 @@
 :root{
     --brand-cream:#F7F4ED;
     --brand-beige:#E6DCCB;
+    --brand-beige-sec:#d3c9b9;
     --brand-coffee: #91674a;
     --brand-coffee-bg:#76543C;
     --brand-dark:#29251F;
@@ -42,18 +43,18 @@ body{
 .nav-link::after{
     content: "";
     background-color: brown;
-    width: 0;
-    height: 2px;
+    width: 100%;
+    height: 0px;
 
     position: absolute;
     bottom: 0;
     left: 0;
 
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .nav-link:hover::after{
-    width: 100%;
+    height: 2px;
 }
 
 .order-btns{
@@ -63,6 +64,53 @@ body{
     padding: 5px 15px;
     border-radius: 5px;
 }
+
+/* toggle button */
+
+.navbuttons{
+    border: none;
+    outline: none;
+
+}
+
+.navbuttons:focus{
+    border: none;
+    outline: none ;
+}
+
+.navbuttons:active{
+    border: none;
+    outline: none ;
+}
+
+.navbuttons:hover{
+        background-color: var(--brand-beige);
+}
+
+.lines1,.lines2,.lines3{
+    background: var(--brand-coffee-bg);
+
+    width: 25px; 
+    height: 3px;
+    margin: 6px;
+
+    transition: all 0.5s;
+}
+
+.crossxs .lines1{
+    transform: rotate(-45deg) translate(-6px,6px);
+}
+
+.crossxs .lines2{
+    opacity: 0;
+}
+
+.crossxs .lines3{
+    transform: rotate(45deg) translate(-6px,-6px);
+}
+
+/* toggle button */
+
 /* End Navbar */
 
 /* End Header */
